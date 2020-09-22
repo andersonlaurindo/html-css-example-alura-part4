@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact - ABC Barbershop</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-box">
+                <h1><img src="logo.png" alt="ABC Barbershop Logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input-padrao" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="email@address.com" required>
+
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" class="input-padrao" placeholder = "+XX (XXX) XXX-XXXX" required>
+
+                <label for="message">Message</label>
+                <textarea cols="70" rows=10 id="message" class="input-padrao"></textarea>
+
+                <fieldset>
+                    <legend>How do you prefer our contact?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contact" value="email" id="radio-email">E-mail
+                    </label>
+                    
+
+                    <label for="radio-phone">
+                        <input type="radio" name="contact" value="phone" id="radio-phone">Phone
+                    </label>
+                    
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked>WhatsApp
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Which time of the day you prefer?</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked>Would you like to receive our latest new by email?
+                </label>
+
+                <input type="submit" value="Send" class="send">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Weekday</th>
+                        <th>Opening hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8am to 20pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8am to 20pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8am to 22pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="logo-white.png" alt="ABC Barbershop logo">
+            <p class="copyright">&copy; Copright ABC Barbershop - 2019</p>
+        </footer>
+    </body>
+</html>
